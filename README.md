@@ -223,34 +223,14 @@ An array of all booking objects in the system.
 Remember to replace YOUR_CUSTOMER_TOKEN and YOUR_ADMIN_TOKEN with the actual tokens you obtain from the login/registration responses. If any step fails with a 500 error, check your backend server console for detailed error messages. If you get a 401 or 403, it's likely an issue with the token or authorization logic.
  selam data as customer 
  post http://localhost:3001/api/auth/register
- {
-  "name": "selam hora",
-  "email": "selam@gmail.com",
-  "password": "bash1234",
-  "role": "customer"
-}
+ 
 responce
-{
-    "id": 8,
-    "name": "selam hora",
-    "email": "selam@gmail.com",
-    "role": "customer",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ3OTEwMzY4LCJleHAiOjE3NTA1MDIzNjh9.DeGQ9FwRsXHpX3wgFQaqL_m7NO4AfRZtysqOJd-ONGI"
-}
+
 for login selam post http://localhost:3001/api/auth/login
 requst 
-{
-  "email": "selam@gmail.com",
-  "password": "bash1234"
-}
+
 responce
-{
-    "id": 8,
-    "name": "selam hora",
-    "email": "selam@gmail.com",
-    "role": "customer",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ3OTEwNTY2LCJleHAiOjE3NTA1MDI1NjZ9.XOmECOek34D0QpV2fyxIXsep-gJOM4f1dYay3sqR6Rw"
-}
+
 
 for super admin data 
 {
@@ -258,123 +238,7 @@ for super admin data
   "password": "verysecureadminpassword"
 }
 response 
-{
-    "id": 5,
-    "name": "Super Admin",
-    "email": "superadmin@example.com",
-    "role": "admin",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzQ3OTEwNzMzLCJleHAiOjE3NTA1MDI3MzN9.4KhujInGavSeBmqT7puVsdHe56E_4AIVDk7yRprhlog"
-}
+
 for cars avilablity 
 get http://localhost:3001/api/cars
 requst send 
-responce 
-    {
-        "id": 4,
-        "make": "Ford",
-        "model": "Mustang",
-        "year": 2024,
-        "license_plate": "ADMIN-002",
-        "daily_rate": "150.00",
-        "status": "rented",
-        "last_known_latitude": null,
-        "last_known_longitude": null,
-        "created_at": "2025-05-21T22:02:56.000Z",
-        "updated_at": "2025-05-22T05:32:51.000Z",
-        "image_url": null
-    },
-    {
-        "id": 1,
-        "make": "Toyota",
-        "model": "Camry",
-        "year": 2022,
-        "license_plate": "DD-123-XYZ",
-        "daily_rate": "50.00",
-        "status": "available",
-        "last_known_latitude": null,
-        "last_known_longitude": null,
-        "created_at": "2025-05-21T19:12:03.000Z",
-        "updated_at": "2025-05-21T19:12:03.000Z",
-        "image_url": null
-    },
-    {
-        "id": 2,
-        "make": "Honda",
-        "model": "Civic",
-        "year": 2021,
-        "license_plate": "DD-456-ABC",
-        "daily_rate": "45.00",
-        "status": "available",
-        "last_known_latitude": null,
-        "last_known_longitude": null,
-        "created_at": "2025-05-21T19:12:03.000Z",
-        "updated_at": "2025-05-21T19:12:03.000Z",
-        "image_url": null
-    },
-    {
-        "id": 3,
-        "make": "Ford",
-        "model": "Explorer",
-        "year": 2023,
-        "license_plate": "DD-789-LMN",
-        "daily_rate": "75.00",
-        "status": "rented",
-        "last_known_latitude": null,
-        "last_known_longitude": null,
-        "created_at": "2025-05-21T19:12:03.000Z",
-    }
-
-
-    to see all users 
-    http://localhost:3001/api/users get 
-
-
-    
-    {
-        "id": 1,
-        "name": "Dave",
-        "email": "dawit@gmail.com",
-        "role": "customer"
-    },
-    {
-        "id": 2,
-        "name": "Test Customer",
-        "email": "customer@example.com",
-        "role": "customer"
-    },
-    {
-        "id": 3,
-        "name": "yakob",
-        "email": "yakob@example.com",
-        "role": "customer"
-    },
-    {
-        "id": 4,
-        "name": "kinde One",
-        "email": "kinde@example.com",
-        "role": "customer"
-    },
-    {
-        "id": 5,
-        "name": "Super Admin",
-        "email": "superadmin@example.com",
-        "role": "admin"
-    },
-    {
-        "id": 6,
-        "name": "remedan it",
-        "email": "remedan@example.com",
-        "role": "customer"
-    },
-    {
-        "id": 7,
-        "name": "yakob",
-        "email": "yakob@gmail.com",
-        "role": "customer"
-    },
-    {
-        "id": 8,
-        "name": "selam hora",
-        "email": "selam@gmail.com",
-        "role": "customer"
-    }
